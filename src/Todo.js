@@ -16,7 +16,7 @@ const Todo = () => {
         setValue(event.target.value)
     }
 
-    let contador = initialTodos.length
+    let contador = todos.length
 
     function addList(){
         addTodos([...todos, {id: contador, name: value, isCompleted: false}])
